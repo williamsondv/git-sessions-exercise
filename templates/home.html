@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block title %}Survey Home{% endblock %} {% block
+content %}
+<div>
+  <h1>Please Select A Survey</h1>
+  <form method="POST">
+    <label for="surveyselection" id="surveylabel">Choose a survey:</label>
+    <select id="surveyselection" name="surveyselection">
+      <option value="satisfaction">Customer Satisfaction Survey</option>
+      <option value="personality">Personality Survey</option>
+    </select>
+    <input type="submit" class="submitbutton" value="Submit" />
+  </form>
+</div>
+{% endblock %}
